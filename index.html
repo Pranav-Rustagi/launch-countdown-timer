@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Launch countdown timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root">
+
+    <header>
+      <h1>we're launching soon</h1>
+    </header>
+
+    <main>
+      <div id="container">
+
+        <div id="days">
+          <div class="board square">
+            <div class="plank square upper" data-slide="next"></div>
+            <div class="plank square lower" data-slide="current"></div>
+
+            <div class="flip-card square">
+                <div class="flip-card-inner square">
+                    <div class="flip-card-front square plank upper" data-slide="current"></div>
+                    <div class="flip-card-back square plank lower" data-slide="next"></div>
+                </div>
+            </div>
+          </div>
+          <h6>days</h6>
+        </div>
+
+        <div id="hours">
+          <div class="board square">
+            <div class="plank square upper" data-slide="next"></div>
+            <div class="plank square lower" data-slide="current"></div>
+
+            <div class="flip-card square">
+                <div class="flip-card-inner square">
+                    <div class="flip-card-front square plank upper" data-slide="current"></div>
+                    <div class="flip-card-back square plank lower" data-slide="next"></div>
+                </div>
+            </div>
+          </div>
+          <h6>hours</h6>
+        </div>
+
+        <div id="mins">
+          <div class="board square">
+            <div class="plank square upper" data-slide="next"></div>
+            <div class="plank square lower" data-slide="current"></div>
+
+            <div class="flip-card square">
+                <div class="flip-card-inner square">
+                    <div class="flip-card-front square plank upper" data-slide="current"></div>
+                    <div class="flip-card-back square plank lower" data-slide="next"></div>
+                </div>
+            </div>
+          </div>
+          <h6>minutes</h6>
+        </div>
+
+        <div id="secs">
+          <div class="board square">
+            <div class="plank square upper" data-slide="next"></div>
+            <div class="plank square lower" data-slide="current"></div>
+
+            <div class="flip-card square">
+                <div class="flip-card-inner square">
+                    <div class="flip-card-front square plank upper" data-slide="current"></div>
+                    <div class="flip-card-back square plank lower" data-slide="next"></div>
+                </div>
+            </div>
+          </div>
+          <h6>seconds</h6>
+        </div>
+        
+      </div>
+    </main>
+
+    <footer>
+      <a href="#" alt="facebook" title="facebook"><div class="icon-facebook"></div></a>
+      <a href="#" alt="pinterest" title="pinterest"><div class="icon-pinterest"></div></a>
+      <a href="#" alt="instagram" title="instagram"><div class="icon-instagram"></div></a>
+    </footer>
+
+  </div>
+
+  <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
