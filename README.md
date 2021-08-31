@@ -8,7 +8,7 @@ Solution to a frontend challenge from [frontendmentor.io](https://www.frontendme
 <br/>
 
 ## Challenges
-- Display time left (days, hours, minutes, seconds) in nth day to arrive.
+- Display time left (days, hours, minutes, seconds) in 10th day to arrive.
 - Update value every second.
 - Make responsive interface.
 - **BONUS TASK :** Flip card from the middle when the number changes.
