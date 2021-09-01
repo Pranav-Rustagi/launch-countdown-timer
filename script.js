@@ -34,10 +34,19 @@ window.onload = () => {
 //  nextVals: Array for time left after one second
 
 const time_left = day => {
-    const today  = new Date();
-    const nth_day = new Date(today);
-    nth_day.setDate(nth_day.getDate() + day);
-    nth_day.setHours(0, 0, 0);
+    const today = new Date();
+    let nth_day;
+    const timerSetDate = localStorage.getItem("timerSetDate");
+
+    if(timerSetDate === null) {
+        nth_day = new Date();
+        nth_day.setDate(today.getDate() + 10);
+        nth_day.setHours(0, 0, 0);
+        localStorage.setItem("timerSetdate", nth_day);
+    }
+
+    else
+        nth_day = new Date(timerSetDate);
 
     const ms = nth_day - today;
     const currVals = ms_to_dhms(ms);
